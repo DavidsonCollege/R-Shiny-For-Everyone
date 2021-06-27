@@ -1,16 +1,14 @@
 #
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
+# Template shinydashboard application
 #
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+# Author: Owen Bezick
+# June 27 2021
+
 
 library(shiny)
 library(shinydashboard)
 
-# Define UI for application that draws a histogram
+# UI ----
 ui <- dashboardPage(
     dashboardHeader(
         title = "Week Two"
@@ -30,7 +28,7 @@ ui <- dashboardPage(
     title = "Dashboard example"
 )
 
-# Define server logic required to draw a histogram
+# Server ----
 server <- function(input, output) {
     
 }

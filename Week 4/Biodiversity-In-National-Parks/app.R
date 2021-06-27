@@ -2,7 +2,7 @@
 # This is a Shiny web application featuring data for Biodiversity in National Parks
 #
 # Author: Owen Bezick
-#
+# June 27 2021
 
 library(shiny)
 library(shinydashboard)
@@ -237,8 +237,8 @@ server <- function(input, output) {
     # list.files(cache_directory) # see your token file in the cache
     # googlesheets4::gs4_deauth() # de auth
     
-    gs4_auth(email = "owbezick@davidson.edu", cache = cache_directory)
-    journal_url <- "https://docs.google.com/spreadsheets/d/1PTh8ezbd28EbSlM7ipl0ednna18x7BJuqoEszOgwb3Y/edit#gid=0"
+    gs4_auth(email = "YOUR_EMAIL", cache = cache_directory)
+    journal_url <- "YOUR_URL"
     journal_data <- range_read(ss = journal_url)
     
     r <- reactiveValues()

@@ -1,9 +1,9 @@
 #
-# This is a template shinydashboard application for Week Two in the EdX R Shiny
+# This is a template shinydashboard application for Week Three in the EdX R Shiny
 # For Everyon Course
 #
 # Author: Owen Bezick
-#
+# 27 June 2021
 
 library(shiny)
 library(shinydashboard)
@@ -112,11 +112,8 @@ server <- function(input, output) {
     m  # Print the map
   })
   
-  # You can access the value of the widget with input$select, e.g.
   output$value <- renderPrint({ input$select })
-  # You can access the value of the widget with input$slider1, e.g.
   output$slider_value <- renderPrint({ input$slider1 })
-  # You can access the value of the widget with input$text, e.g.
   output$text_value <- renderPrint({ input$text })
   
   observeEvent(input$actionBttn, {

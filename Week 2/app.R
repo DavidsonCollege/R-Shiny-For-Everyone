@@ -1,9 +1,9 @@
 #
-# This is a template shinydashboard application for Week Two in the EdX R Shiny
-# For Everyon Course
+# shinydashboard application for Week Two in the EdX R Shiny For Everyone Course
+# featuring shiny widgets inputs, echarts4R graphics, DT datatable, and leaflet map
 #
 # Author: Owen Bezick
-#
+# 27 June 2021
 
 library(shiny)
 library(shinydashboard)
@@ -31,25 +31,28 @@ ui <- dashboardPage(
   dashboardBody(
     fluidRow(
       box(width = 6
-          # Copy the line below to make a select box 
+          # Select input ----
           , selectInput("select", label = h3("Select box"), 
                       choices = list("Choice 1" = 1, "Choice 2" = 2, "Choice 3" = 3), 
-                      selected = 1),
+                      selected = 1)
           
-          hr(),
-          fluidRow(column(3, verbatimTextOutput("value")))
+          , hr()
+          # Select input output ----
+          , fluidRow(column(3, verbatimTextOutput("value")))
           , br()
-           # Copy the line below to make a slider bar 
+          # Slider input ----
           , sliderInput("slider1", label = h3("Slider"), min = 0, 
                       max = 100, value = 50)
+          # Slider input output ----
           , verbatimTextOutput("slider_value")
           , br()
-          # Copy the line below to make a text input box
-          , textInput("text", label = h3("Text input"), value = "Enter text..."),
-          
-          hr(),
-          fluidRow(column(3, verbatimTextOutput("text_value")))
+          # Text input  ----
+          , textInput("text", label = h3("Text input"), value = "Enter text...")
+          , hr()
+          # Text input output ----
+          , fluidRow(column(3, verbatimTextOutput("text_value")))
       )
+      # Echarts4R outputs ----
       , tabBox(width = 6
                , tabPanel(title = "Scatter Plot"
                           , echarts4rOutput("scatter"))
@@ -57,10 +60,12 @@ ui <- dashboardPage(
                           , echarts4rOutput("bar"))
       )
     )
+    # DT Table output ----
     , fluidRow(
       box(width = 6
           , DTOutput("datatable")
       )
+      # Leaflet output ----
       , box(width = 6
             , leafletOutput("map")
       )
@@ -122,7 +127,6 @@ server <- function(input, output) {
                          , "Hello World!"
                      )
                    )
-                   
       )
     )
   })

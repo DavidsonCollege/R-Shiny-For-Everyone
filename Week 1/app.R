@@ -6,11 +6,15 @@
 #
 #    http://shiny.rstudio.com/
 #
+# Author: Owen Bezick
+# 27 June 2021
 
+# Dependencies ----
 library(shiny)
 library(shinydashboard)
 
 # Define UI for application that draws a histogram
+# UI ----
 ui <- dashboardPage(
     dashboardHeader(
         title = "Old Faithful"
@@ -54,6 +58,7 @@ ui <- dashboardPage(
 )
 
 # Define server logic required to draw a histogram
+# Server ----
 server <- function(input, output) {
     
     output$distPlot <- renderPlot({
