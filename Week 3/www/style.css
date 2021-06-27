@@ -1,0 +1,17 @@
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: #333;
+}
+
+.box.box-primary {
+    border-top-color: #111;
+}
+.skin-black .main-header .navbar {
+    background-color: #111;
+}
+.skin-black .main-header>.logo {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold; 
+    border-bottom: 0 solid transparent;
+    border-right: 1px solid #eee;
+}

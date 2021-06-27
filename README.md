@@ -1,2 +1,2 @@
-# R-Shiny-For-Everyone
- Code repository for the Davidson College EdX R Shiny For Everyone course.
+# R Shiny 4 Everyone
+ Code Repository for EdX Course.

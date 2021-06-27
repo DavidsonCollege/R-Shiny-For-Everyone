@@ -1,0 +1,76 @@
+/* Species Page CSS */
+.filter_box{
+  height:25vh;
+  overflow:scroll;
+}
+
+#category_check_box {
+  text-align:center;
+}
+
+.bg-aqua {
+    background-color: #87c47a!important;
+}
+.small-box {
+  height: 9vh;
+}
+.small-box h3 {
+      margin: 0 0 0px 0;
+
+}
+
+
+.box.box-primary {
+    border-top-color: #268d05;
+}
+
+
+.skin-blue .main-header .logo:hover {
+    background-color: #268d05;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #268d05;
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #87c47a;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #87c47a;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle {
+    background-color: #87c47a;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    color: #9c9c9c;
+}
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    border-left-color: #268d05;
+}
+
+.main-header .logo {
+  font-size:25px;
+  font-weight:400;
+}
+
+
+.bttn-unite.bttn-default {
+    border-color: #107d4b;
+    color: #00a65a;
+}
+.bttn-unite.bttn-default:focus, .bttn-unite.bttn-default:hover {
+    background: #00a65a82;
+    color: #00a65a;
+}
+
+.bttn-unite.bttn-default:before {
+    background: #d2d6de;
+}
+.bttn-unite.bttn-default:after {
+    background: #eee;
+}
