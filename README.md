@@ -27,4 +27,6 @@ app.r: Biodiversity in National Parks shiny application deployed live at [this l
 
 data/parks.csv & data/species.csv: Data sourced from [Kaggle](https://www.kaggle.com/nationalparkservice/park-biodiversity).
 
+journal_data.csv: Comma seperated value file containing initial journal data for the National Parks application.
+
 www/style.css: Style sheet for Biodiversity in National Parks application.
