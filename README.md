@@ -1,2 +1,2 @@
-# R Shiny For Everyone
- Code component for the R Shiny for Everyone Davidson College EdX course.
+# R-Shiny-For-Everyone
+ Code repository for the Davidson College EdX R Shiny For Everyone course.
